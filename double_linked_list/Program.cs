@@ -114,6 +114,29 @@ namespace double_linked_list
             else
                 return false;
         }
-       
+        public void ascending()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nlist i sempty");
+            else
+            {
+                Console.WriteLine("\nRecord in the ascending order of" + "Roll number are:\n");
+                node currentNode;
+                //membawa currentNode ke node paling belakang
+                currentNode = START;
+                while (currentNode.next != null)
+                {
+                    currentNode = currentNode.next;
+                }
+
+                //membaca data dari last node ke first node
+                while (currentNode != null)
+                {
+                    Console.Write(currentNode.noMhs + " " + currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
+            }
+
+        }
     }
 }
