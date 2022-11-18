@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -70,6 +71,16 @@ namespace double_linked_list
             newNode.next = current;
             newNode.prev = previous;         
         }
-
+        public bool Search (int rollNo, ref node previous, ref node current)
+        {
+            previous = current = START;
+            while (current != null &&
+                rollNo != current.noMhs)
+            {
+                previous = current;
+                current = current.next;
+            }
+            return (current != null);
+        }
     }
 }
