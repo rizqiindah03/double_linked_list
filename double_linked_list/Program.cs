@@ -27,7 +27,7 @@ namespace double_linked_list
 
         //constructor
 
-        public void addNote()
+        public void addNode()
         {
             int nim;
             string nm;
@@ -159,7 +159,12 @@ namespace double_linked_list
                     char ch = Convert.ToChar(Console.ReadLine());
                     switch (ch)
                     {
-
+                        case '1':
+                            {
+                                obj.addNode();
+                            }
+                            break;
+                      
                     }
                 }
             }
