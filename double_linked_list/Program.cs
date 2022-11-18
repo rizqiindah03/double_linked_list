@@ -114,7 +114,7 @@ namespace double_linked_list
             else
                 return false;
         }
-        public void ascending()
+        public void descending()
         {
             if (listEmpty())
                 Console.WriteLine("\nlist i sempty");
@@ -185,7 +185,12 @@ namespace double_linked_list
                             {
                                 obj.ascending();
                             }
-                            break; 
+                            break;
+                        case '4':
+                            {
+                                obj.descending();
+                            }
+                            break;
                     }
                 }
             }
