@@ -203,7 +203,7 @@ namespace double_linked_list
                             {
                                 obj.descending();
                             }
-                            break;
+                            break; 
                     }
                 }
             }
