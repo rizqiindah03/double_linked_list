@@ -164,7 +164,23 @@ namespace double_linked_list
                                 obj.addNode();
                             }
                             break;
-                      
+                        case '2':
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nlist is empty");
+                                    break;
+                                }
+                                Console.Write("\nEnter the roll number of the student" +
+                                    " whose record is to be deleted: ");
+                                int rollNo = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.dellNode(rollNo) == false)
+                                    Console.WriteLine("Record not found");
+                                else
+                                    Console.WriteLine("Record with roll number " + rollNo + "deleted \n");
+                            }
+                            break;
                     }
                 }
             }
